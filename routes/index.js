@@ -16,7 +16,7 @@ const messages = [
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Facebook', messages });
+  res.render('index', { title: 'Messaging App', messages });
 });
 
 router.post('/new', function (req, res, next) {
