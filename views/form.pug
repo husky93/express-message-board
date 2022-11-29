@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= "Form"
+  form(action="/new", method="post")
+    label(for="author")= "Author:" 
+    input#author(type="text", name="author")
+    label(for="text")= "Text:" 
+    input#text(type="text", name="text")
+    button(type="submit")= "Submit"
